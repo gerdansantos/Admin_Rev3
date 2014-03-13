@@ -27,5 +27,9 @@ cd ../ambari_server
 docker build -t hwx/ambari_server .
 echo "Build of hwx/ambari_server complete!"
 
+# Copy utility scripts into /root/scripts, which is already in the PATH
+echo "Copying utility scripts..."
+cp ../../scripts/* /root/scripts/
+
 echo ""
 echo "The images have successfully been built for this classroom VM"
