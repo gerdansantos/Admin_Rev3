@@ -62,7 +62,6 @@ RUN echo "root:hadoop" | chpasswd
 # sudo is needed to run the Hadoop binaries
 RUN yum -y install sudo bind-utils
 
-ADD conf/hosts /etc/
 # Installing dnsmasq because /etc/hosts is read-only
 RUN yum -y install dnsmasq
 RUN echo 'listen-address=127.0.0.1' >> /etc/dnsmasq.conf
@@ -75,7 +74,7 @@ RUN cp /root/conf/banner_add_hosts /etc/
 RUN echo 'nameserver 8.8.8.8' >> /etc/resolv.dnsmasq.conf
 RUN echo 'nameserver 8.8.4.4' >> /etc/resolv.dnsmasq.conf
 # Fix a bug in dnsmasq
-#RUN sed -i '17d' /etc/init.d/dnsmasq
+RUN sed -i '17d' /etc/init.d/dnsmasq
 
 EXPOSE 22
 
