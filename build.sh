@@ -15,10 +15,11 @@ docker build -t hwx/ambari_node .
 echo "Build of hwx/ambari_node complete!"
 
 # Build hwx/ambari_server_base
-echo "Building hwx/ambari_server_base. This may take a long time!!!"
-cd ../ambari_server_base
-docker build -t hwx/ambari_server_base .
-echo "Build of hwx/ambari_server_base complete!"
+# This image is pre-built on the VM
+# echo "Building hwx/ambari_server_base. This may take a long time!!!"
+# cd ../ambari_server_base
+# docker build -t hwx/ambari_server_base .
+# echo "Build of hwx/ambari_server_base complete!"
 
 # Build hwx/ambari_server
 echo "Building hwx/ambari_server"
