@@ -1,0 +1,5 @@
+2012-09-26 13:58:48,407 INFO org.apache.hadoop.mapred.JobInProgress: job_201209211956_0009: nMaps=1 nReduces=1 max=-1
+2012-09-26 13:58:48,543 INFO org.apache.hadoop.mapred.JobQueuesManager: Job job_201209211956_0009 submitted to queue default
+2012-09-26 13:58:48,543 INFO org.apache.hadoop.mapred.JobTracker: Job job_201209211956_0009 added successfully for user 'hdfs' to queue 'default'
+2012-09-26 13:58:49,658 INFO org.apache.hadoop.mapred.JobInitializationPoller: Passing to Initializer Job Id :job_201209211956_0009 User: hdfs Queue : default
+

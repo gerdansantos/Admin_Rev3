@@ -1,0 +1,40 @@
+node3,Ambari Smoke Test User,ambari-qa@EXAMPLE.COM,smokeuser.headless.keytab,/etc/security/keytabs,ambari-qa,hadoop,440
+node3,HDFS User,hdfs@EXAMPLE.COM,hdfs.headless.keytab,/etc/security/keytabs,hdfs,hadoop,440
+node3,HBase User,hbase@EXAMPLE.COM,hbase.headless.keytab,/etc/security/keytabs,hbase,hadoop,440
+node3,NodeManager SPNEGO User,HTTP/node3@EXAMPLE.COM,spnego.service.keytab,/etc/security/keytabs,root,hadoop,440
+node3,DataNode,dn/node3@EXAMPLE.COM,dn.service.keytab,/etc/security/keytabs,hdfs,hadoop,400
+node3,HBase Master,hbase/node3@EXAMPLE.COM,hbase.service.keytab,/etc/security/keytabs,hbase,hadoop,400
+node3,Nagios Server,nagios/node3@EXAMPLE.COM,nagios.service.keytab,/etc/security/keytabs,nagios,hadoop,400
+node3,NodeManager,nm/node3@EXAMPLE.COM,nm.service.keytab,/etc/security/keytabs,yarn,hadoop,400
+node3,ZooKeeper Server,zookeeper/node3@EXAMPLE.COM,zk.service.keytab,/etc/security/keytabs,zookeeper,hadoop,400
+node2,Ambari Smoke Test User,ambari-qa@EXAMPLE.COM,smokeuser.headless.keytab,/etc/security/keytabs,ambari-qa,hadoop,440
+node2,HDFS User,hdfs@EXAMPLE.COM,hdfs.headless.keytab,/etc/security/keytabs,hdfs,hadoop,440
+node2,HBase User,hbase@EXAMPLE.COM,hbase.headless.keytab,/etc/security/keytabs,hbase,hadoop,440
+node2,HDFS SPNEGO User,HTTP/node2@EXAMPLE.COM,spnego.service.keytab,/etc/security/keytabs,root,hadoop,440
+node2,WebHCat SPNEGO User,HTTP/node2@EXAMPLE.COM,spnego.service.keytab,/etc/security/keytabs,root,hadoop,440
+node2,Oozie SPNEGO User,HTTP/node2@EXAMPLE.COM,spnego.service.keytab,/etc/security/keytabs,root,hadoop,440
+node2,History server SPNEGO User,HTTP/node2@EXAMPLE.COM,spnego.service.keytab,/etc/security/keytabs,root,hadoop,440
+node2,ResourceManager SPNEGO User,HTTP/node2@EXAMPLE.COM,spnego.service.keytab,/etc/security/keytabs,root,hadoop,440
+node2,NodeManager SPNEGO User,HTTP/node2@EXAMPLE.COM,spnego.service.keytab,/etc/security/keytabs,root,hadoop,440
+node2,DataNode,dn/node2@EXAMPLE.COM,dn.service.keytab,/etc/security/keytabs,hdfs,hadoop,400
+node2,HBase RegionServer,hbase/node2@EXAMPLE.COM,hbase.service.keytab,/etc/security/keytabs,hbase,hadoop,400
+node2,History Server,jhs/node2@EXAMPLE.COM,jhs.service.keytab,/etc/security/keytabs,mapred,hadoop,400
+node2,Hive Metastore and HiveServer2,hive/node2@EXAMPLE.COM,hive.service.keytab,/etc/security/keytabs,hive,hadoop,400
+node2,NodeManager,nm/node2@EXAMPLE.COM,nm.service.keytab,/etc/security/keytabs,yarn,hadoop,400
+node2,Oozie Server,oozie/node2@EXAMPLE.COM,oozie.service.keytab,/etc/security/keytabs,oozie,hadoop,400
+node2,ResourceManager,rm/node2@EXAMPLE.COM,rm.service.keytab,/etc/security/keytabs,yarn,hadoop,400
+node2,SNameNode,nn/node2@EXAMPLE.COM,nn.service.keytab,/etc/security/keytabs,hdfs,hadoop,400
+node2,ZooKeeper Server,zookeeper/node2@EXAMPLE.COM,zk.service.keytab,/etc/security/keytabs,zookeeper,hadoop,400
+node4,Ambari Smoke Test User,ambari-qa@EXAMPLE.COM,smokeuser.headless.keytab,/etc/security/keytabs,ambari-qa,hadoop,440
+node4,HDFS User,hdfs@EXAMPLE.COM,hdfs.headless.keytab,/etc/security/keytabs,hdfs,hadoop,440
+node4,HBase User,hbase@EXAMPLE.COM,hbase.headless.keytab,/etc/security/keytabs,hbase,hadoop,440
+node1,Ambari Smoke Test User,ambari-qa@EXAMPLE.COM,smokeuser.headless.keytab,/etc/security/keytabs,ambari-qa,hadoop,440
+node1,HDFS User,hdfs@EXAMPLE.COM,hdfs.headless.keytab,/etc/security/keytabs,hdfs,hadoop,440
+node1,HBase User,hbase@EXAMPLE.COM,hbase.headless.keytab,/etc/security/keytabs,hbase,hadoop,440
+node1,HDFS SPNEGO User,HTTP/node1@EXAMPLE.COM,spnego.service.keytab,/etc/security/keytabs,root,hadoop,440
+node1,NodeManager SPNEGO User,HTTP/node1@EXAMPLE.COM,spnego.service.keytab,/etc/security/keytabs,root,hadoop,440
+node1,DataNode,dn/node1@EXAMPLE.COM,dn.service.keytab,/etc/security/keytabs,hdfs,hadoop,400
+node1,HBase RegionServer,hbase/node1@EXAMPLE.COM,hbase.service.keytab,/etc/security/keytabs,hbase,hadoop,400
+node1,NameNode,nn/node1@EXAMPLE.COM,nn.service.keytab,/etc/security/keytabs,hdfs,hadoop,400
+node1,NodeManager,nm/node1@EXAMPLE.COM,nm.service.keytab,/etc/security/keytabs,yarn,hadoop,400
+node1,ZooKeeper Server,zookeeper/node1@EXAMPLE.COM,zk.service.keytab,/etc/security/keytabs,zookeeper,hadoop,400
