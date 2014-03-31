@@ -35,6 +35,8 @@ RUN createrepo /var/www/html/hdp/HDP-UTILS-1.1.0.16
 RUN createrepo /var/www/html/hdp/ambari-1.x
 RUN createrepo /var/www/html/hdp/Updates-ambari-1.4.4.23
 
+ADD localrepos/ /etc/yum.repos.d/
+RUN rm -f /etc/yum.repos.d/hdp.repo
 
 RUN yum -y install ambari-server
 RUN ambari-server setup -s -j $JAVA_HOME

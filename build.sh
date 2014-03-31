@@ -5,7 +5,7 @@
 # Build hwx/ambari_node_base first
 cd ./dockerfiles/ambari_node_base
 x=$(docker images | grep -c  hwx/ambari_node_base)
-if [ x -eq 0 ]; then
+if [[ x -eq 0 ]]; then
 	echo -e "\n*** Building hwx/ambari_node_base image... ***\n"
 	docker build -t hwx/ambari_node_base .
 	echo -e "\n*** Build of hwx/ambari_node_base complete! ***\n"
@@ -22,7 +22,7 @@ echo -e "\n*** Build of hwx/ambari_node complete! ***\n"
 # Build hwx/ambari_server_base
 # This image is probably pre-built on the VM
 y=$(docker images | grep -c  hwx/ambari_server_base)
-if [ y -eq 0 ]; then
+if [[ y -eq 0 ]]; then
 	echo -e "\n*** Building hwx/ambari_server_base. This may take a long time!!! ***\n"
 	cd ../ambari_server_base
 	docker build -t hwx/ambari_server_base .
