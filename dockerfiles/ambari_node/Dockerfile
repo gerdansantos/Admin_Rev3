@@ -14,9 +14,6 @@ ADD scripts/ /root/scripts/
 ADD repos/ /etc/yum.repos.d/
 ADD conf/90-nproc.conf /etc/security/limits.d/
 ADD conf/system-auth /etc/pam.d/
-ADD conf/nodes /root/conf
-ADD labs/ /root/labs
-ADD data/ /root/data
 
 EXPOSE 8440 8441 
 

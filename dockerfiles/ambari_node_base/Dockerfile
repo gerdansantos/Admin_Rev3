@@ -54,8 +54,11 @@ RUN touch /root/.ssh/authorized_keys \
 RUN echo "IdentityFile /root/.ssh/id_rsa" >> /etc/ssh/ssh_config
 
 # Copy scripts and config files onto new container
-RUN mkdir /root/scripts && mkdir /root/conf
+RUN mkdir /root/scripts && mkdir /root/conf && mkdir /root/data && mkdir /root/labs
 ADD conf/ /root/conf/
+ADD labs/ /root/labs/
+ADD data/ /root/data/
+ADD scripts/ /root/scripts/
 ADD conf/config /etc/selinux/config
 RUN echo "root:hadoop" | chpasswd
 
