@@ -5,9 +5,9 @@ gpgcheck=0
 enabled=1
 priority=1
 
-[Updates-ambari-1.4.4.23]
-name=ambari-1.4.4.23 - Updates
-baseurl=http://node1/hdp/Updates-ambari-1.4.4.23
+[Updates-ambari-1.5.0]
+name=ambari-1.5.0 - Updates
+baseurl=http://node1/hdp/Updates-ambari-1.5.0
 gpgcheck=0
 enabled=1
 priority=1
