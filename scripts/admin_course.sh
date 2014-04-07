@@ -6,9 +6,9 @@ CID_namenode=$(docker run -d --privileged=true --dns 127.0.0.1 -p 8080:8080 -p 8
 IP_namenode=$(docker inspect --format "{{ .NetworkSettings.IPAddress }}" node1)
 echo "node1 started at $IP_namenode"
 
-CID=$(docker run -d --dns 127.0.0.1 --privileged=true -h node2 --name node2 -p 22 --link node2:node2 -p 8440 -p 8441 -p 8088:8088 -p 19888:19888 -i -t hwx/ambari_node)
+CID=$(docker run -d --dns 127.0.0.1 --privileged=true -h node2 --name node2 -p 22 --link node1:node1 -p 8440 -p 8441 -p 8088:8088 -p 19888:19888 -i -t hwx/ambari_node)
 IP_node2=$(docker inspect --format "{{ .NetworkSettings.IPAddress }}" node2)
-echo "node1 started at $IP_node2"
+echo "node2 started at $IP_node2"
 
 for (( i=3; i<=4; ++i));
 do
