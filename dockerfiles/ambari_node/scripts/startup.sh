@@ -4,8 +4,7 @@ chkconfig sshd on
 chkconfig ntpd on
 
 /etc/init.d/sshd start
-#/etc/init.d/ntpd start
-ntpd
+/etc/init.d/ntpd start
 
 # start DNS
 service dnsmasq restart
